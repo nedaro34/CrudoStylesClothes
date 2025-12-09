@@ -26,6 +26,31 @@
         <a href="productos.html">Comprar</a>
         <p>Envíos a todo el mundo</p>
     </section>
+    <div class="flex flex-nowrap justify-around mt-10 max-w-[90%] mx-auto gap-4">
+        <div class="flex flex-col sm:flex-row items-center text-center sm:text-left">
+            <img class="w-10 h-10" src="img/icons/dolares.png" alt="ícono dólares">
+            <div class="sm:ml-5">
+                <p class="text-lg font-bold">25% DE DESCUENTO</p>
+                <p>Pagando en efectivo/transferencia</p>
+            </div>
+        </div>
+        <div class="hidden sm:block w-0.5 bg-black"></div>
+        <div class="hidden items-center md:flex">
+            <img class="w-10 h-10" src="img/icons/enviado.png" alt="ícono envíos">
+            <div class="ml-5">
+                <p class="text-lg font-bold">ENVÍOS GRATIS</p>
+                <p>Compras mayores a $100.000</p>
+            </div>
+        </div>
+        <div class="hidden md:block w-0.5 bg-black"></div>
+        <div class="hidden items-center sm:flex">
+            <img class="w-10 h-10" src="img/icons/tarjetas-de-credito.png" alt="ícono tarjeta de crédito">
+            <div class="ml-5">
+                <p class="text-lg font-bold">3 CUOTAS SIN INTERÉS</p>
+                <p>Con todas las tarjetas</p>
+            </div>
+        </div>
+    </div>
     <section class="flex flex-wrap flex-col items-center mb-15">
         <h2 class="w-full bg-indigo-300 text-4xl text-center py-6 mb-10 font-bold">Básicos infaltables</h2>
         <div class="flex flex-wrap gap-4 justify-center md:flex-nowrap">
@@ -98,57 +123,99 @@
         </div>
         <a class="inline-block w-90 md:w-110 p-3 text-center bg-black text-white mt-7" href="productos.html">Ver más productos</a>
     </section>
-    <section>
-        <h2>¿Qué buscamos?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed nesciunt, perferendis molestias quia error iusto nulla nostrum blanditiis eius laudantium dolor vitae voluptatum deleniti sunt accusamus odit iure quam voluptatibus officia incidunt inventore id! Ex ut praesentium, aliquid eum vitae laudantium reiciendis mollitia totam sapiente impedit dicta beatae vel obcaecati iste minima aperiam error commodi quaerat quam recusandae consectetur! Ipsum numquam dolore corporis ipsam autem molestiae veniam vero rerum placeat nihil? Iste fugiat modi impedit dignissimos praesentium sunt minima aut voluptate tempora.</p>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rem tempora accusamus dignissimos, temporibus nostrum repellat aperiam animi sapiente</p>
+    <section class="mb-15">
+        <h2 class="w-full bg-indigo-300 text-4xl text-center py-6 mb-10 font-bold">Nuestro objetivo</h2>
+        <p class="mx-[10%] text-center">Te queremos ofrecer una experiencia de compra online sencilla, segura y accesible, brindando a nuestros clientes prendas de calidad que se adapten a distintos estilos, necesidades y presupuestos. Buscamos posicionarnos como una tienda de referencia en el comercio electrónico de indumentaria, combinando variedad, comodidad y un servicio al cliente cercano y eficiente.</p>
+        <div class="flex flex-nowrap justify-around mt-10 max-w-[90%] mx-auto gap-4">
+            <div class="flex flex-col sm:flex-row items-center text-center sm:text-left">
+                <img class="w-10 h-10" src="img/icons/dolares.png" alt="ícono dólares">
+                <div class="sm:ml-5">
+                    <p class="text-lg font-bold">25% DE DESCUENTO</p>
+                    <p>Pagando en efectivo/transferencia</p>
+                </div>
+            </div>
+            <div class="hidden sm:block w-0.5 bg-black"></div>
+            <div class="hidden items-center md:flex">
+                <img class="w-10 h-10" src="img/icons/enviado.png" alt="ícono envíos">
+                <div class="ml-5">
+                    <p class="text-lg font-bold">ENVÍOS GRATIS</p>
+                    <p>Compras mayores a $100.000</p>
+                </div>
+            </div>
+            <div class="hidden md:block w-0.5 bg-black"></div>
+            <div class="hidden items-center sm:flex">
+                <img class="w-10 h-10" src="img/icons/tarjetas-de-credito.png" alt="ícono tarjeta de crédito">
+                <div class="ml-5">
+                    <p class="text-lg font-bold">3 CUOTAS SIN INTERÉS</p>
+                    <p>Con todas las tarjetas</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rem tempora accusamus dignissimos, temporibus nostrum repellat aperiam animi sapiente</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rem tempora accusamus dignissimos, temporibus nostrum repellat aperiam animi sapiente</p>
-        </div>
-        <div>
-            <p>Recibe las últimas novedades antes que nadie</p>
-            <form action="subscripcion-html">
-                <p>
-                    Ingresa tu email aquí:
-                    <input type="email" name="email" id="email" placeholder="direccion@ejemplo.com">
-                </p>
+        <div class="mt-20">
+            <h2 class="w-full bg-indigo-300 text-3xl text-center py-6 mb-10 font-bold">Recibí promos exclusivas dejándonos tu mail</h2>
+            <form class="flex flex-wrap justify-center items-center gap-4" action="suscripcionExtitosa.html">
+                <input class="w-80 h-10 text-2xl border-2 p-1 border-indigo-400" type="email" name="email" id="email" placeholder="direccion@ejemplo.com">
+                <input class="w-40 h-10 text-2xl border-2 p-1 border-indigo-400 bg-indigo-300" type="submit" value="Suscribirme">
             </form>
         </div>
     </section>
-    <footer class="h-160 sm:h-60 bg-indigo-700 flex flex-wrap flex-col sm:flex-row justify-start sm:justify-evenly items-center sm:items-start text-indigo-50">
-        <div class="mt-10">
-            <h3 class="font-bold text-2xl">Información</h3>
-            <ul class="mt-4">
-                <li class="mt-2"><a href="productos.html">Tienda</a></li>
-                <li class="mt-2"><a href="nosotros.html#distribuidores">Distribuidores</a></li>
-                <li class="mt-2"><a href="nosotros.html">Nosotros</a></li>
-                <li class="mt-2"><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <footer class="h-195 sm:h-90 md:h-60 bg-indigo-700 text-indigo-50">
+        <div class="md:hidden pt-10 text-left sm:text-center ml-10 sm:ml-0 mr-10 sm:mr-0">
+            <h3 class="font-bold text-2xl">Recibí promos exclusivas dejándonos tu email</h3>
+            <form class="mt-2" action="suscripcionExtitosa.html">
+                <input class="border-2 p-1 border-indigo-400" type="email" name="email" id="email" placeholder="direccion@ejemplo.com">
+                <input class="border-2 p-1 border-indigo-400 bg-indigo-300" type="submit" value="Suscribirme">
+            </form>
         </div>
-        <div class="mt-10">
-            <h3 class="font-bold text-2xl">Legales</h3>
-            <ul class="mt-4">
-                <li class="mt-2"><a href="faq.html">Preguntas frecuentes</a></li>
-                <li class="mt-2"><a href="devoluciones.html">Envíos y devoluciones</a></li>
-                <li class="mt-2"><a href="politica.html">Políticas de la tienda</a></li>
-                <li class="mt-2"><a href="politica.html#metodospago">Métodos de pago</a></li>
-            </ul>
-        </div>
-        <div class="mt-10">
-            <h3 class="font-bold text-2xl">Nuestras redes</h3>
-            <ul class="mt-4">
-                <li class="mt-2"><a href="https://www.facebook.com"><img src="img/facebook.png" alt="ícono facebook"></a></li>
-                <li class="mt-2"><a href="https://www.x.com"><img src="img/x.png" alt="ícono x"></a></li>
-                <li class="mt-2"><a href="https://www.instagram.com"><img src="img/instagram.png" alt="ícono instagram"></a></li>
-            </ul>
+        <div class="flex flex-wrap flex-col sm:flex-row justify-start sm:justify-evenly items-start">
+            <div class="ml-10 sm:ml-0 mt-10">
+                <h3 class="font-bold text-2xl">Información</h3>
+                <ul class="mt-4">
+                    <li class="mt-2"><a href="productos.html">Tienda</a></li>
+                    <li class="mt-2"><a href="nosotros.html#distribuidores">Distribuidores</a></li>
+                    <li class="mt-2"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="mt-2"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="ml-10 sm:ml-0 mt-10">
+                <h3 class="font-bold text-2xl">Legales</h3>
+                <ul class="mt-4">
+                    <li class="mt-2"><a href="faq.html">Preguntas frecuentes</a></li>
+                    <li class="mt-2"><a href="devoluciones.html">Envíos y devoluciones</a></li>
+                    <li class="mt-2"><a href="politica.html">Políticas de la tienda</a></li>
+                    <li class="mt-2"><a href="politica.html#metodospago">Métodos de pago</a></li>
+                </ul>
+            </div>
+            <div class="ml-10 sm:ml-0 mt-10">
+                <h3 class="font-bold text-2xl">Nuestras redes</h3>
+                <ul class="mt-4">
+                        <li class="mt-2">
+                            <a href="https://www.facebook.com">
+                                <img class="w-5 inline-block" src="img/icons/icon facebook.png" alt="ícono facebook">
+                                <span class="ml-2">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://www.x.com">
+                                <img class="w-5 inline-block" src="img/icons/icon x.png" alt="ícono x">
+                                <span class="ml-2">X</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://www.instagram.com">
+                                <img class="w-5 inline-block" src="img/icons/icon instagram.png" alt="ícono instagram">
+                                <span class="ml-2">Instagram</span>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+            <div class="hidden md:block ml-10 sm:ml-0 mt-10">
+                <h3 class="font-bold text-2xl">Recibí promos exclusivas<br>dejándonos tu email</h3>
+                <form class="mt-2" action="suscripcionExtitosa.html">
+                    <input class="border-2 p-1 border-indigo-400" type="email" name="email" id="email" placeholder="direccion@ejemplo.com">
+                    <input class="border-2 p-1 border-indigo-400 bg-indigo-300" type="submit" value="Suscribirme">
+                </form>
+            </div>
         </div>
     </footer>
 </body>
