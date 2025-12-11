@@ -8,7 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-indigo-100">
-    <section class="bg-[url(img/videoframe_449853.png)] h-screen w-screen text-indigo-50">
+
+    <!--Cabecera y portada hero-->
+    <!--Revisar porqué al agregarle flex y flex-col al section, me soluciona el desplazamiento del div-->
+    <section class="bg-[url(img/videoframe_449853.png)] h-screen w-screen text-indigo-50 flex flex-col">
         <header class="py-4 bg-indigo-700 flex flex-wrap justify-center lg:justify-around lg:flex-nowrap lg:items-center">
             <a class="text-4xl sm:text-6xl lg:text-4xl mb-4 lg:mb-0" href="index.html">CrudoStylesClothes</a>
             <nav class="w-full lg:w-2/4 flex justify-evenly">
@@ -20,19 +23,14 @@
                 <a class="hover:underline underline-offset-6" href="signup.html">Sign Up</a>
             </nav>
         </header>
-        <div class="flex flex-wrap flex-col justify-center items-center mt-40">
-            <h1 class="text-5xl font-extrabold ts-text">Nunca dejes de ser original</h1>
-            <p class="text-2xl text-center w-2/3 mt-6 ts-text">Nos encargamos de renovar tu estilo con las prendas más modernas para que brilles cada vez que salgas a la calle y te robes todas las miradas.</p>
+        <div class="flex flex-col justify-center items-center size-full">
+            <h1 class="text-4xl sm:text-5xl font-extrabold ts-text text-center max-w-[90%]">Nunca dejes de ser original</h1>
+            <p class="text-xl sm:text-2xl text-center w-2/3 mt-6 ts-text">Nos encargamos de renovar tu estilo con las prendas más modernas para que brilles cada vez que salgas a la calle y te robes todas las miradas.</p>
             <a class="block text-xl mt-6 px-20 py-3 bg-indigo-600 hover:bg-indigo-700" href="productos.html">Comprar</a>
         </div>
     </section>
-    <!-- <section>
-        <img src="img/videoframe_449853.png" alt="" width="100%">
-        <h1>Nunca dejes de ser original</h1>
-        <p>Nos encargamos de renovar tu estilo con las prendas más modernas para que brilles cada vez que salgas a la calle y te robes todas las miradas.</p>
-        <a href="productos.html">Comprar</a>
-        <p>Envíos a todo el mundo</p>
-    </section> -->
+
+    <!--Iconos informativos-->
     <div class="flex flex-nowrap justify-around mt-10 max-w-[90%] mx-auto gap-4">
         <div class="flex flex-col sm:flex-row items-center text-center sm:text-left">
             <img class="w-10 h-10" src="img/icons/dolares.png" alt="ícono dólares">
@@ -58,6 +56,8 @@
             </div>
         </div>
     </div>
+
+    <!--Sección de tarjetas de básicos infaltables-->
     <section class="flex flex-wrap flex-col items-center mb-15">
         <h2 class="w-full bg-indigo-300 text-4xl text-center py-6 mb-10 font-bold">Básicos infaltables</h2>
         <div class="flex flex-wrap gap-4 justify-center md:flex-nowrap">
@@ -82,54 +82,60 @@
         </div>
         <a class="inline-block w-90 md:w-110 p-3 text-center bg-black text-white mt-7" href="productos.html">Ver más productos</a>
     </section>
+
+    <!--Sección de tarjetas de accesorios-->
     <section class="flex flex-wrap flex-col items-center mb-15">
         <h2 class="w-full bg-indigo-300 text-4xl text-center py-6 mb-10 font-bold">Accesorios</h2>
         <div class="flex flex-wrap gap-4 justify-center md:flex-nowrap">
-            <article class="bg-indigo-300 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%]">
-                <img class="w-full" src="img/videoframe_449853.png" alt="">
-                <h3 class="text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
-                <p class="text-center py-4">$50.000</p>
-                <a class="inline-block text-center w-full py-1 bg-indigo-500" href="">Ver producto</a>
+            <article class="bg-indigo-50 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] shadow-md shadow-gray-400 py-4">
+                <img class="w-[90%] mx-auto" src="img/videoframe_449853.png" alt="">
+                <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
+                <p class="text-center text-xl py-4">$50.000</p>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="">Ver producto</a>
             </article>
-            <article class="bg-indigo-300 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%]">
-                <img class="w-full" src="img/videoframe_449853.png" alt="">
-                <h3 class="text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
-                <p class="text-center py-4">$50.000</p>
-                <a class="inline-block text-center w-full py-1 bg-indigo-500" href="">Ver producto</a>
+            <article class="bg-indigo-50 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] shadow-md shadow-gray-400 py-4">
+                <img class="w-[90%] mx-auto" src="img/videoframe_449853.png" alt="">
+                <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
+                <p class="text-center text-xl py-4">$50.000</p>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="">Ver producto</a>
             </article>
-            <article class="bg-indigo-300 min-w-90 max-w-[90%] hidden sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] md:block">
-                <img class="w-full" src="img/videoframe_449853.png" alt="">
-                <h3 class="text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
-                <p class="text-center py-4">$50.000</p>
-                <a class="inline-block text-center w-full py-1 bg-indigo-500" href="">Ver producto</a>
+            <article class="bg-indigo-50 min-w-90 max-w-[90%] hidden sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] md:block shadow-md shadow-gray-400 py-4">
+                <img class="w-[90%] mx-auto" src="img/videoframe_449853.png" alt="">
+                <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
+                <p class="text-center text-xl py-4">$50.000</p>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="">Ver producto</a>
             </article>
         </div>
         <a class="inline-block w-90 md:w-110 p-3 text-center bg-black text-white mt-7" href="productos.html">Ver más productos</a>
     </section>
+
+    <!--Sección de tarjetas de calzado-->
     <section class="flex flex-wrap flex-col items-center mb-15">
         <h2 class="w-full bg-indigo-300 text-4xl text-center py-6 mb-10 font-bold">Calzado</h2>
         <div class="flex flex-wrap gap-4 justify-center md:flex-nowrap">
-            <article class="bg-indigo-300 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%]">
-                <img class="w-full" src="img/videoframe_449853.png" alt="">
-                <h3 class="text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
-                <p class="text-center py-4">$50.000</p>
-                <a class="inline-block text-center w-full py-1 bg-indigo-500" href="">Ver producto</a>
+            <article class="bg-indigo-50 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] shadow-md shadow-gray-400 py-4">
+                <img class="w-[90%] mx-auto" src="img/videoframe_449853.png" alt="">
+                <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
+                <p class="text-center text-xl py-4">$50.000</p>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="">Ver producto</a>
             </article>
-            <article class="bg-indigo-300 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%]">
-                <img class="w-full" src="img/videoframe_449853.png" alt="">
-                <h3 class="text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
-                <p class="text-center py-4">$50.000</p>
-                <a class="inline-block text-center w-full py-1 bg-indigo-500" href="">Ver producto</a>
+            <article class="bg-indigo-50 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] shadow-md shadow-gray-400 py-4">
+                <img class="w-[90%] mx-auto" src="img/videoframe_449853.png" alt="">
+                <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
+                <p class="text-center text-xl py-4">$50.000</p>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="">Ver producto</a>
             </article>
-            <article class="bg-indigo-300 min-w-90 max-w-[90%] hidden sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] md:block">
-                <img class="w-full" src="img/videoframe_449853.png" alt="">
-                <h3 class="text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
-                <p class="text-center py-4">$50.000</p>
-                <a class="inline-block text-center w-full py-1 bg-indigo-500" href="">Ver producto</a>
+            <article class="bg-indigo-50 min-w-90 max-w-[90%] hidden sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] md:block shadow-md shadow-gray-400 py-4">
+                <img class="w-[90%] mx-auto" src="img/videoframe_449853.png" alt="">
+                <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
+                <p class="text-center text-xl py-4">$50.000</p>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="">Ver producto</a>
             </article>
         </div>
         <a class="inline-block w-90 md:w-110 p-3 text-center bg-black text-white mt-7" href="productos.html">Ver más productos</a>
     </section>
+
+    <!--Sección de objetivos informativos y suscripción-->
     <section class="mb-15">
         <h2 class="w-full bg-indigo-300 text-4xl text-center py-6 mb-10 font-bold">Nuestro objetivo</h2>
         <p class="mx-[10%] text-center">Te queremos ofrecer una experiencia de compra online sencilla, segura y accesible, brindando a nuestros clientes prendas de calidad que se adapten a distintos estilos, necesidades y presupuestos. Buscamos posicionarnos como una tienda de referencia en el comercio electrónico de indumentaria, combinando variedad, comodidad y un servicio al cliente cercano y eficiente.</p>
@@ -165,14 +171,16 @@
                 <input class="w-40 h-10 text-2xl border-2 p-1 border-indigo-400 bg-indigo-300" type="submit" value="Suscribirme">
             </form>
         </div> -->
-        <div class="mt-20 py-10 bg-indigo-300 flex flex-nowrap justify-center gap-10 items-center">
-            <p class="text-xl font-semibold w-1/3">¡Recibí promos exclusivas dejándonos tu mail y entérate antes que nadie de todas las novedades!</p>
-            <form class="flex flex-nowrap justify-center items-center gap-4" action="suscripcionExtitosa.html">
-                <input class="w-80 h-10 text-2xl border-2 p-1 bg-indigo-100 border-indigo-400" type="email" name="email" id="email" placeholder="email@ejemplo.com" required>
-                <input class="w-40 h-10 text-2xl text-indigo-100 border-2 p-1 border-indigo-400 bg-indigo-400 cursor-pointer" type="submit" value="Suscribirme">
+        <div class="mt-20 py-10 px-10 bg-indigo-300 flex flex-wrap lg:flex-nowrap justify-center items-center gap-4">
+            <p class="text-xl font-semibold text-center lg:text-left">¡Recibí promos exclusivas dejándonos tu mail y entérate antes que nadie de todas las novedades!</p>
+            <form class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-4" action="suscripcionExtitosa.html">
+                <input class="max-w-90 h-10 text-2xl border-2 p-1 bg-indigo-100 border-indigo-400" type="email" name="email" id="email" placeholder="email@ejemplo.com" required>
+                <input class="w-40 h-10 text-2xl text-indigo-100 border-2 p-1 border-indigo-400 bg-indigo-400 cursor-pointer hover:border-indigo-500 hover:bg-indigo-500" type="submit" value="Suscribirme">
             </form>
         </div>
     </section>
+
+    <!--Pie de página-->
     <footer class="h-195 sm:h-90 md:h-60 bg-indigo-700 text-indigo-50">
         <div class="md:hidden pt-10 text-left sm:text-center ml-10 sm:ml-0 mr-10 sm:mr-0">
             <h3 class="font-bold text-2xl">Recibí promos exclusivas dejándonos tu email</h3>
