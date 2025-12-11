@@ -11,8 +11,8 @@
 
     <!--Cabecera y portada hero-->
     <!--Revisar porqué al agregarle flex y flex-col al section, me soluciona el desplazamiento del div-->
-    <section class="bg-[url(img/videoframe_449853.png)] h-screen w-screen text-indigo-50 flex flex-col">
-        <header class="py-4 bg-indigo-700 flex flex-wrap justify-center lg:justify-around lg:flex-nowrap lg:items-center">
+    <section class="bg-[url(img/bg-header.webp)] h-screen w-screen text-indigo-50 flex flex-col bg-cover">
+        <header class="py-4 bg-indigo-600 flex flex-wrap justify-center lg:justify-around lg:flex-nowrap lg:items-center">
             <a class="text-4xl sm:text-6xl lg:text-4xl mb-4 lg:mb-0" href="index.html">CrudoStylesClothes</a>
             <nav class="w-full lg:w-2/4 flex justify-evenly">
                 <a class="hover:underline underline-offset-6" href="index.html">Inicio</a>
@@ -23,15 +23,15 @@
                 <a class="hover:underline underline-offset-6" href="signup.html">Sign Up</a>
             </nav>
         </header>
-        <div class="flex flex-col justify-center items-center size-full">
+        <div class="flex flex-col justify-center items-center size-full bg-[#00000060]">
             <h1 class="text-4xl sm:text-5xl font-extrabold ts-text text-center max-w-[90%]">Nunca dejes de ser original</h1>
             <p class="text-xl sm:text-2xl text-center w-2/3 mt-6 ts-text">Nos encargamos de renovar tu estilo con las prendas más modernas para que brilles cada vez que salgas a la calle y te robes todas las miradas.</p>
-            <a class="block text-xl mt-6 px-20 py-3 bg-indigo-600 hover:bg-indigo-700" href="productos.html">Comprar</a>
+            <a class="inline-flex justify-center items-center text-xl mt-6 w-45 h-12 bg-indigo-600 hover:bg-indigo-700 hover:w-46 hover:h-13 transition-all duration-150 ease-linear" href="productos.html">Comprar</a>
         </div>
     </section>
 
     <!--Iconos informativos-->
-    <div class="flex flex-nowrap justify-around mt-10 max-w-[90%] mx-auto gap-4">
+    <div class="flex flex-nowrap justify-around mt-15 max-w-[90%] mx-auto gap-4">
         <div class="flex flex-col sm:flex-row items-center text-center sm:text-left">
             <img class="w-10 h-10" src="img/icons/dolares.png" alt="ícono dólares">
             <div class="sm:ml-5">
@@ -58,9 +58,15 @@
     </div>
 
     <!--Sección de tarjetas de básicos infaltables-->
-    <section class="flex flex-wrap flex-col items-center mb-15">
-        <h2 class="w-full bg-indigo-300 text-4xl text-center py-6 mb-10 font-bold">Básicos infaltables</h2>
-        <div class="flex flex-wrap gap-4 justify-center md:flex-nowrap">
+    <section class="flex flex-wrap flex-col items-center mt-15">
+        <div class="w-full h-40 bg-[url(img/bg-div1.webp)] bg-cover bg-center">
+            <div class="size-full  bg-[#00000050] flex justify-center items-center">
+                <h2 class="text-5xl font-bold text-center max-w-[90%] text-white ts-text">Básicos infaltables</h2>
+            </div>
+        </div>
+
+        <!--Tarjetas-->
+        <div class="flex flex-wrap gap-4 justify-center md:flex-nowrap mt-10">
             <article class="bg-indigo-50 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/videoframe_449853.png" alt="">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
@@ -84,9 +90,15 @@
     </section>
 
     <!--Sección de tarjetas de accesorios-->
-    <section class="flex flex-wrap flex-col items-center mb-15">
-        <h2 class="w-full bg-indigo-300 text-4xl text-center py-6 mb-10 font-bold">Accesorios</h2>
-        <div class="flex flex-wrap gap-4 justify-center md:flex-nowrap">
+    <section class="flex flex-wrap flex-col items-center mt-15">
+        <div class="w-full h-40 bg-[url(img/bg-div2.webp)] bg-cover bg-center">
+            <div class="size-full  bg-[#00000050] flex justify-center items-center">
+                <h2 class="text-5xl font-bold text-center max-w-[90%] text-white ts-text">Accesorios</h2>
+            </div>
+        </div>
+
+        <!--Tarjetas-->
+        <div class="flex flex-wrap gap-4 justify-center md:flex-nowrap mt-10">
             <article class="bg-indigo-50 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/videoframe_449853.png" alt="">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
@@ -110,9 +122,15 @@
     </section>
 
     <!--Sección de tarjetas de calzado-->
-    <section class="flex flex-wrap flex-col items-center mb-15">
-        <h2 class="w-full bg-indigo-300 text-4xl text-center py-6 mb-10 font-bold">Calzado</h2>
-        <div class="flex flex-wrap gap-4 justify-center md:flex-nowrap">
+    <section class="flex flex-wrap flex-col items-center mt-15">
+        <div class="w-full h-40 bg-[url(img/bg-div3.webp)] bg-cover bg-center">
+            <div class="size-full  bg-[#00000050] flex justify-center items-center">
+                <h2 class="text-5xl font-bold text-center max-w-[90%] text-white ts-text">Calzados</h2>
+            </div>
+        </div>
+
+        <!--Tarjetas-->
+        <div class="flex flex-wrap gap-4 justify-center md:flex-nowrap mt-10">
             <article class="bg-indigo-50 min-w-90 max-w-[90%] sm:min-w-75 sm:max-w-[45%] md:min-w-0 md:max-w-[27%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/videoframe_449853.png" alt="">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
@@ -136,9 +154,20 @@
     </section>
 
     <!--Sección de objetivos informativos y suscripción-->
-    <section class="mb-15">
-        <h2 class="w-full bg-indigo-300 text-4xl text-center py-6 mb-10 font-bold">Nuestro objetivo</h2>
-        <p class="mx-[10%] text-center">Te queremos ofrecer una experiencia de compra online sencilla, segura y accesible, brindando a nuestros clientes prendas de calidad que se adapten a distintos estilos, necesidades y presupuestos. Buscamos posicionarnos como una tienda de referencia en el comercio electrónico de indumentaria, combinando variedad, comodidad y un servicio al cliente cercano y eficiente.</p>
+    <section class="mt-15">
+        <div class="w-full h-40 bg-[url(img/bg-div3.webp)] bg-cover bg-center">
+            <div class="size-full  bg-[#00000050] flex justify-center items-center">
+                <h2 class="text-5xl font-bold text-center max-w-[90%] text-white ts-text">Nuestro objetivo</h2>
+            </div>
+        </div>
+
+        <article class="bg-indigo-50 max-w-[90%] mx-auto shadow-md shadow-gray-400 py-5 mt-10">
+            <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-300 text-3xl">Resumen</h3>
+            <p class="mx-[10%] text-center my-4">Te queremos ofrecer una experiencia de compra online sencilla, segura y accesible, brindando a nuestros clientes prendas de calidad que se adapten a distintos estilos, necesidades y presupuestos. Buscamos posicionarnos como una tienda de referencia en el comercio electrónico de indumentaria, combinando variedad, comodidad y un servicio al cliente cercano y eficiente.</p>
+            <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="nosotros.html">Conóncenos</a>
+        </article>
+        
+        <!--Iconos informativos-->
         <div class="flex flex-nowrap justify-around mt-10 max-w-[90%] mx-auto gap-4">
             <div class="flex flex-col sm:flex-row items-center text-center sm:text-left">
                 <img class="w-10 h-10" src="img/icons/dolares.png" alt="ícono dólares">
