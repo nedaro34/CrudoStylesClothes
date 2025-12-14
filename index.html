@@ -12,10 +12,10 @@
 
     <!--Cabecera y portada hero-->
     <!--Revisar porqué al agregarle flex y flex-col al section, me soluciona el desplazamiento del div-->
-    <section class="bg-[url(img/bg-header.webp)] h-screen w-screen text-indigo-50 flex flex-col bg-cover">
+    <section class="bg-[url(img/bg-header.webp)] h-screen w-auto text-indigo-50 flex flex-col bg-cover">
         <header class="py-4 bg-indigo-600 flex flex-wrap justify-center lg:justify-around lg:flex-nowrap lg:items-center">
             <a class="text-5xl sm:text-6xl lg:text-5xl mb-4 lg:mb-0 bbh-bogle text-indigo-50 ts-text" href="index.html">Crudo<span class="dancing-script-400 text-red-500">StyleClothes</span></a>
-            <nav class="w-full lg:w-2/4 flex justify-evenly">
+            <nav class="w-full lg:w-2/4 flex justify-evenly font-semibold">
                 <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500" href="index.html">Inicio</a>
                 <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500" href="productos.html">Productos</a>
                 <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500" href="contacto.html">Contacto</a>
@@ -30,6 +30,15 @@
             <a class="inline-flex justify-center items-center text-xl mt-6 w-45 h-12 bg-indigo-600 hover:bg-indigo-700 transition-colors duration-150 ease-linear" href="productos.html">Comprar</a>
         </div>
     </section>
+
+    <!--Panel de suscripción-->
+    <div class="py-10 px-10 bg-indigo-400 flex flex-wrap lg:flex-nowrap justify-center items-center gap-4">
+        <p class="text-xl text-indigo-50 font-semibold text-center lg:text-left">¡Recibí promos exclusivas dejándonos tu mail y entérate antes que nadie de todas las novedades!</p>
+        <form class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-4" action="suscripcionExtitosa.html">
+            <input class="max-w-90 h-10 text-2xl p-1 bg-indigo-50 focus:outline-2 focus:outline-indigo-700 focus:border-indigo-700" type="email" name="email" placeholder="email@ejemplo.com" required>
+            <input class="w-40 h-10 inline-flex justify-center items-center text-2xl text-indigo-50 bg-indigo-600 cursor-pointer hover:border-indigo-700 hover:bg-indigo-700" type="submit" value="Suscribirme">
+        </form>
+    </div>
 
     <!--Iconos informativos-->
     <div class="flex flex-nowrap justify-around mt-15 max-w-[90%] mx-auto gap-4">
@@ -163,9 +172,9 @@
         </div>
 
         <article class="bg-indigo-50 max-w-[90%] mx-auto shadow-md shadow-gray-400 py-5 mt-10">
-            <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-300 text-3xl">Resumen</h3>
+            <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-300 text-3xl">Nosotros</h3>
             <p class="mx-[10%] text-center my-4">Te queremos ofrecer una experiencia de compra online sencilla, segura y accesible, brindando a nuestros clientes prendas de calidad que se adapten a distintos estilos, necesidades y presupuestos. Buscamos posicionarnos como una tienda de referencia en el comercio electrónico de indumentaria, combinando variedad, comodidad y un servicio al cliente cercano y eficiente.</p>
-            <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="nosotros.html">Conóncenos</a>
+            <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="nosotros.html">Conócenos</a>
         </article>
         
         <!--Iconos informativos-->
@@ -201,22 +210,15 @@
                 <input class="w-40 h-10 text-2xl border-2 p-1 border-indigo-400 bg-indigo-300" type="submit" value="Suscribirme">
             </form>
         </div> -->
-        <div class="mt-20 py-10 px-10 bg-indigo-300 flex flex-wrap lg:flex-nowrap justify-center items-center gap-4">
-            <p class="text-xl font-semibold text-center lg:text-left">¡Recibí promos exclusivas dejándonos tu mail y entérate antes que nadie de todas las novedades!</p>
-            <form class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-4" action="suscripcionExtitosa.html">
-                <input class="max-w-90 h-10 text-2xl border-2 p-1 bg-indigo-100 border-indigo-400" type="email" name="email" id="email" placeholder="email@ejemplo.com" required>
-                <input class="w-40 h-10 text-2xl text-indigo-100 border-2 p-1 border-indigo-400 bg-indigo-400 cursor-pointer hover:border-indigo-500 hover:bg-indigo-500" type="submit" value="Suscribirme">
-            </form>
-        </div>
     </section>
 
     <!--Pie de página-->
-    <footer class="h-195 sm:h-90 md:h-60 bg-indigo-700 text-indigo-50">
+    <footer class="h-195 mt-10 sm:h-90 md:h-60 bg-indigo-700 text-indigo-50">
         <div class="md:hidden pt-10 text-left sm:text-center ml-10 sm:ml-0 mr-10 sm:mr-0">
             <h3 class="font-bold text-2xl">Recibí promos exclusivas dejándonos tu email</h3>
             <form class="mt-2" action="suscripcionExtitosa.html">
-                <input class="border-2 p-1 border-indigo-400" type="email" name="email" id="email" placeholder="direccion@ejemplo.com">
-                <input class="border-2 p-1 border-indigo-400 bg-indigo-300 cursor-pointer" type="submit" value="Suscribirme">
+                <input class="border-2 p-1 border-indigo-500 bg-indigo-800 focus:bg-indigo-900 focus:border-indigo-400 focus:outline-none text-indigo-50" type="email" name="email" placeholder="direccion@ejemplo.com">
+                <input class="border-2 p-1 border-indigo-500 bg-indigo-800 hover:bg-indigo-900 hover:border-indigo-400 cursor-pointer" type="submit" value="Suscribirme">
             </form>
         </div>
         <div class="flex flex-wrap flex-col sm:flex-row justify-start sm:justify-evenly items-start">
@@ -243,19 +245,19 @@
                 <ul class="mt-4">
                         <li class="mt-2">
                             <a href="https://www.facebook.com">
-                                <img class="w-5 inline-block" src="img/icons/icon facebook.png" alt="ícono facebook">
+                                <img class="w-5 inline-block" src="img/icons/icon-facebook.png" alt="ícono facebook">
                                 <span class="ml-2">Facebook</span>
                             </a>
                         </li>
                         <li class="mt-2">
                             <a href="https://www.x.com">
-                                <img class="w-5 inline-block" src="img/icons/icon x.png" alt="ícono x">
+                                <img class="w-5 inline-block" src="img/icons/icon-x.png" alt="ícono x">
                                 <span class="ml-2">X</span>
                             </a>
                         </li>
                         <li class="mt-2">
                             <a href="https://www.instagram.com">
-                                <img class="w-5 inline-block" src="img/icons/icon instagram.png" alt="ícono instagram">
+                                <img class="w-5 inline-block" src="img/icons/icon-instagram.png" alt="ícono instagram">
                                 <span class="ml-2">Instagram</span>
                             </a>
                         </li>
@@ -264,8 +266,8 @@
             <div class="hidden md:block ml-10 sm:ml-0 mt-10">
                 <h3 class="font-bold text-2xl">Recibí promos exclusivas<br>dejándonos tu email</h3>
                 <form class="mt-2" action="suscripcionExtitosa.html">
-                    <input class="border-2 p-1 border-indigo-400" type="email" name="email" id="email" placeholder="direccion@ejemplo.com">
-                    <input class="border-2 p-1 border-indigo-400 bg-indigo-300 cursor-pointer" type="submit" value="Suscribirme">
+                    <input class="border-2 p-1 border-indigo-500 bg-indigo-800 focus:bg-indigo-900 focus:border-indigo-400 focus:outline-none text-indigo-50" type="email" name="email" id="email" placeholder="direccion@ejemplo.com">
+                    <input class="border-2 p-1 border-indigo-500 bg-indigo-800 hover:bg-indigo-900 hover:border-indigo-400 cursor-pointer" type="submit" value="Suscribirme">
                 </form>
             </div>
         </div>
