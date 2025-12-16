@@ -19,14 +19,10 @@
             href="index.html">Crudo<span class="dancing-script-400 text-red-500">StyleClothes</span></a>
         <nav class="w-full lg:w-2/4 flex justify-evenly font-semibold">
             <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500" href="index.html">Inicio</a>
-            <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500"
-                href="productos.html">Productos</a>
-            <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500"
-                href="contacto.html">Contacto</a>
-            <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500"
-                href="nosotros.html">Nosotros</a>
-            <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500" href="login.html">Login</a>
-            <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500" href="signup.html">Sign Up</a>
+            <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500" href="productos.html">Productos</a>
+            <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500" href="contacto.html">Contacto</a>
+            <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500" href="nosotros.html">Nosotros</a>
+            <a class="hover:underline underline-offset-6 decoration-2 decoration-red-500" href="cuenta.html">Cuenta</a>
         </nav>
     </header>
 
@@ -39,8 +35,7 @@
 
     <!--Panel de suscripción-->
     <div class="py-3 px-10 bg-indigo-400 flex flex-wrap lg:flex-nowrap justify-center items-center gap-4">
-        <p class="text-xl text-indigo-50 font-semibold text-center lg:text-left">¡Recibí promos exclusivas dejándonos tu
-            mail y entérate antes que nadie de todas las novedades!</p>
+        <p class="text-xl text-indigo-50 font-semibold text-center lg:text-left">¡Recibí promos exclusivas dejándonos tu mail y entérate antes que nadie de todas las novedades!</p>
         <form class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-4" action="suscripcionExtitosa.html">
             <input class="max-w-90 h-10 text-2xl p-1 bg-indigo-50 focus:outline-2 focus:outline-indigo-700 focus:border-indigo-700" type="email" name="email" placeholder="email@ejemplo.com" required>
             <input class="w-40 h-10 inline-flex justify-center items-center text-2xl text-indigo-50 bg-indigo-600 cursor-pointer hover:border-indigo-700 hover:bg-indigo-700" type="submit" value="Suscribirme">
@@ -74,17 +69,17 @@
         </div>
     </div>
 
+    <!--Barra lateral y tarjetas de productos-->
     <main class="flex flex-nowrap flex-col lg:flex-row w-full sm:w-[90%] mx-auto mt-10 gap-5">
-        <div class="w-full h-20 flex lg:hidden flex-nowrap justify-between items-center bg-indigo-50 shadow-md shadow-gray-400 py-4">
-            
-            <div class="ml-4">
-                <p class="text-xl font-semibold">Filtros</p>
-                <img src="" alt="">
-            </div>
 
-            <!--Filtro de ordenamiento-->
+        <!--Barra de filtro-->
+        <div class="w-full h-20 flex lg:hidden flex-nowrap justify-between items-center bg-indigo-50 shadow-md shadow-gray-400 py-4">
+            <a class="ml-4 h-10 px-2 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100 text-xl font-semibold inline-flex justify-center items-center gap-2" href="#">
+                <img class="size-5 inline-block" src="img/icons/filtro.png" alt="">
+                Filtros
+            </a>
             <div class="mr-4">
-                <select class="h-10 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100" name="orden" id="orden">
+                <select class="h-10 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100 font-semibold" name="orden" id="orden">
                     <option value="1" selected>Más destacado</option>
                     <option value="2">Más vendidos</option>
                     <option value="3">A - Z</option>
@@ -136,12 +131,12 @@
                 <label class="block text-xl font-semibold mt-4" for="precio:">Precio:</label>
                 <div class="flex flex-nowrap gap-2">
                     <div>
-                        <label class="block text-xl" for="precioMin:">Desde:</label>
+                        <label class="block" for="precioMin:">Desde:</label>
                         <input class="inline-block w-[99%] h-10 px-2 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100" type="number" name="precioMin"
                             id="precioMin" placeholder="2823">
                     </div>
                     <div>
-                        <label class="block text-xl" for="precioMax:">Hasta:</label>
+                        <label class="block" for="precioMax:">Hasta:</label>
                         <input class="inline-block w-[99%] h-10 px-2 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100" type="number" name="precioMax"
                             id="precioMax" placeholder="90000">
                     </div>
@@ -371,72 +366,63 @@
                 <img class="w-[90%] mx-auto" src="img/campera1.webp" alt="campera kevenly eleven">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
                 <p class="text-center text-xl py-4">$150.000</p>
-                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear"
-                    href="">Ver producto</a>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="camperaKevenlyEleven.html">Ver producto</a>
             </article>
 
             <article class="bg-indigo-50 w-[90%] sm:w-[48%] md:w-[30%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/campera2.webp" alt="campera kevenly rumble">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Rumble</h3>
                 <p class="text-center text-xl py-4">$190.000</p>
-                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear"
-                    href="">Ver producto</a>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="camperaKevenlyRumble.html">Ver producto</a>
             </article>
 
             <article class="bg-indigo-50 w-[90%] sm:w-[48%] md:w-[30%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/campera3.webp" alt="campera kevenly chill">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Chill</h3>
                 <p class="text-center text-xl py-4">$90.000</p>
-                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear"
-                    href="">Ver producto</a>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="camperaKevenlyChill.html">Ver producto</a>
             </article>
 
             <article class="bg-indigo-50 w-[90%] sm:w-[48%] md:w-[30%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/carpeta-oficio.webp" alt="carpetas de oficio">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Carpetas Oficio</h3>
                 <p class="text-center text-xl py-4">$21.000</p>
-                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear"
-                    href="">Ver producto</a>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="carpetasOficio.html">Ver producto</a>
             </article>
 
             <article class="bg-indigo-50 w-[90%] sm:w-[48%] md:w-[30%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/fichero-020.webp" alt="fichero 020">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Fichero 020</h3>
                 <p class="text-center text-xl py-4">$19.000</p>
-                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear"
-                    href="">Ver producto</a>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="fichero020.html">Ver producto</a>
             </article>
 
             <article class="bg-indigo-50 w-[90%] sm:w-[48%] md:w-[30%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/tarjetero.webp" alt="">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Tarjetero Plegable</h3>
                 <p class="text-center text-xl py-4">$12.000</p>
-                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear"
-                    href="">Ver producto</a>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="tarjeteroPlegable.html">Ver producto</a>
             </article>
 
             <article class="bg-indigo-50 w-[90%] sm:w-[48%] md:w-[30%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/bandolera-ines.webp" alt="bandolera ines">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Bandolera Ines</h3>
                 <p class="text-center text-xl py-4">$50.000</p>
-                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear"
-                    href="">Ver producto</a>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="bandoleraInes.html">Ver producto</a>
             </article>
 
             <article class="bg-indigo-50 w-[90%] sm:w-[48%] md:w-[30%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/mochila-monster.webp" alt="mochila monster">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Mochila Monster</h3>
                 <p class="text-center text-xl py-4">$55.000</p>
-                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear"
-                    href="">Ver producto</a>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="mochilaMonster.html">Ver producto</a>
             </article>
 
             <article class="bg-indigo-50 w-[90%] sm:w-[48%] md:w-[30%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/mochila-agata.webp" alt="mochila agata">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Mochila Agata</h3>
                 <p class="text-center text-xl py-4">$50.000</p>
-                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear"
-                    href="">Ver producto</a>
+                <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear" href="mochilaAgata.html">Ver producto</a>
             </article>
         </section>
     </main>
