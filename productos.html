@@ -42,12 +42,8 @@
         <p class="text-xl text-indigo-50 font-semibold text-center lg:text-left">¡Recibí promos exclusivas dejándonos tu
             mail y entérate antes que nadie de todas las novedades!</p>
         <form class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-4" action="suscripcionExtitosa.html">
-            <input
-                class="max-w-90 h-10 text-2xl p-1 bg-indigo-50 focus:outline-2 focus:outline-indigo-700 focus:border-indigo-700"
-                type="email" name="email" placeholder="email@ejemplo.com" required>
-            <input
-                class="w-40 h-10 inline-flex justify-center items-center text-2xl text-indigo-50 bg-indigo-600 cursor-pointer hover:border-indigo-700 hover:bg-indigo-700"
-                type="submit" value="Suscribirme">
+            <input class="max-w-90 h-10 text-2xl p-1 bg-indigo-50 focus:outline-2 focus:outline-indigo-700 focus:border-indigo-700" type="email" name="email" placeholder="email@ejemplo.com" required>
+            <input class="w-40 h-10 inline-flex justify-center items-center text-2xl text-indigo-50 bg-indigo-600 cursor-pointer hover:border-indigo-700 hover:bg-indigo-700" type="submit" value="Suscribirme">
         </form>
     </div>
 
@@ -78,37 +74,109 @@
         </div>
     </div>
 
-    <!--Barra lateral-->
-    <div class="flex flex-nowrap w-full sm:w-[90%] mx-auto mt-10 gap-5">
+    <main class="flex flex-nowrap flex-col lg:flex-row w-full sm:w-[90%] mx-auto mt-10 gap-5">
+        <div class="w-full h-20 flex lg:hidden flex-nowrap justify-between items-center bg-indigo-50 shadow-md shadow-gray-400 py-4">
+            
+            <div class="ml-4">
+                <p class="text-xl font-semibold">Filtros</p>
+                <img src="" alt="">
+            </div>
+
+            <!--Filtro de ordenamiento-->
+            <div class="mr-4">
+                <select class="h-10 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100" name="orden" id="orden">
+                    <option value="1" selected>Más destacado</option>
+                    <option value="2">Más vendidos</option>
+                    <option value="3">A - Z</option>
+                    <option value="4">Z - A</option>
+                    <option value="5">Precio: menor a mayor</option>
+                    <option value="6">Precio: mayor a menor</option>
+                    <option value="7">Más nuevo a más viejo</option>
+                    <option value="8">Más viejo a más nuevo</option>
+                </select>
+            </div>
+        </div>
+        
+        <!--Barra lateral-->
         <aside class="w-1/4 lg:block h-auto hidden bg-indigo-50 shadow-md shadow-gray-400 py-4">
             <form class="px-6 flex flex-col gap-2" action="filtro.html">
 
-                <label class="block text-xl font-semibold" for="orden:">Ordenar por:</label>
-                <select class="block w-full h-10 border-2" name="orden" id="orden">
+                <!--Filtro de ordenamiento-->
+                <label class="block text-xl font-semibold" for="orden">Ordenar por:</label>
+                <select class="block w-full h-10 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100" name="orden" id="orden">
                     <option value="1" selected>Más destacado</option>
-                    <option value="2" selected>Más vendidos</option>
-                    <option value="3" selected>A - Z</option>
-                    <option value="4" selected>Z - A</option>
-                    <option value="5" selected>Precio: menor a mayor</option>
-                    <option value="6" selected>Precio: mayor a menor</option>
-                    <option value="7" selected>Más nuevo a más viejo</option>
-                    <option value="8" selected>Más viejo a más nuevo</option>
+                    <option value="2">Más vendidos</option>
+                    <option value="3">A - Z</option>
+                    <option value="4">Z - A</option>
+                    <option value="5">Precio: menor a mayor</option>
+                    <option value="6">Precio: mayor a menor</option>
+                    <option value="7">Más nuevo a más viejo</option>
+                    <option value="8">Más viejo a más nuevo</option>
                 </select>
 
+                <!--Filtro de tipo de producto-->
+                <label class="block text-xl font-semibold mt-4" for="tipo">Tipo de producto</label>
+                <select class="block w-full h-10 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100" name="tipo" id="tipo">
+                    <option value="1" selected>Todo</option>
+                    <option disabled>________________</option>
+                    <option value="2">Bermudas</option>
+                    <option value="3">Camisas</option>
+                    <option value="4">Camperas</option>
+                    <option value="5">Musculosas</option>
+                    <option value="6">Pantalones</option>
+                    <option value="7">Polleras</option>
+                    <option value="8">Remeras</option>
+                    <option value="9">Vestidos</option>
+                    <option disabled>________________</option>
+                    <option value="10">Mochilas y bolsos</option>
+                    <option value="11">Accesorios</option>
+                </select>
+
+                <!--Filtro de rango de precios-->
                 <label class="block text-xl font-semibold mt-4" for="precio:">Precio:</label>
                 <div class="flex flex-nowrap gap-2">
                     <div>
                         <label class="block text-xl" for="precioMin:">Desde:</label>
-                        <input class="inline-block border-2 w-[99%] h-10 px-2" type="number" name="precioMin"
+                        <input class="inline-block w-[99%] h-10 px-2 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100" type="number" name="precioMin"
                             id="precioMin" placeholder="2823">
                     </div>
                     <div>
                         <label class="block text-xl" for="precioMax:">Hasta:</label>
-                        <input class="inline-block border-2 w-[99%] h-10 px-2" type="number" name="precioMax"
+                        <input class="inline-block w-[99%] h-10 px-2 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100" type="number" name="precioMax"
                             id="precioMax" placeholder="90000">
                     </div>
                 </div>
 
+                <!--Filtro de categoría de cliente-->
+                <label class="block text-xl font-semibold mt-4" for="categoria">Categoría</label>
+                <div class="flex flex-wrap gap-3">
+                    <label class="inline-flex items-center gap-1" for="hombre">
+                        <input class="size-4" type="checkbox" name="categoria" id="hombre">
+                        Hombre
+                    </label>
+
+                    <label class="inline-flex items-center gap-1" for="mujer">
+                        <input class="size-4" type="checkbox" name="categoria" id="mujer">
+                        Mujer
+                    </label>
+
+                    <label class="inline-flex items-center gap-1" for="nino">
+                        <input class="size-4" type="checkbox" name="Niñoa" id="nino">
+                        Niño
+                    </label>
+
+                    <label class="inline-flex items-center gap-1" for="nina">
+                        <input class="size-4" type="checkbox" name="categoria" id="nina">
+                        Niña
+                    </label>
+
+                    <label class="inline-flex items-center gap-1" for="unisex">
+                        <input class="size-4" type="checkbox" name="categoria" id="unisex">
+                        Unisex
+                    </label>
+                </div>
+
+                <!--Filtro de talles-->
                 <label class="block text-xl font-semibold mt-4" for="talle">Talle</label>
                 <div class="flex flex-wrap gap-3">
 
@@ -223,18 +291,82 @@
                     </label>
                 </div>
 
+                <!--Filtro de color-->
                 <label class="block text-xl font-semibold mt-4" for="talle">Color</label>
-                <div>
+                <div class="flex flex-wrap gap-3">
+                    <label for="rosa" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-rose-400" type="checkbox" name="color" id="rosa">
+                        Rosa
+                    </label>
+
                     <label for="rojo" class="inline-flex items-center gap-1">
-                        <input class="size-4 checked:accent-red-600" type="checkbox" name="rojo" id="rojo">
+                        <input class="size-4 accent-red-600" type="checkbox" name="color" id="rojo">
                         Rojo
                     </label>
+
+                    <label for="naranja" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-orange-500" type="checkbox" name="color" id="naranja">
+                        Naranja
+                    </label>
+
+                    <label for="amarillo" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-yellow-500" type="checkbox" name="color" id="amarillo">
+                        Amarillo
+                    </label>
+
+                    <label for="verde" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-green-500" type="checkbox" name="color" id="verde">
+                        Verde
+                    </label>
+
+                    <label for="verdeOscuro" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-green-700" type="checkbox" name="color" id="verdeOscuro">
+                        Verde oscuro
+                    </label>
+
+                    <label for="celeste" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-sky-500" type="checkbox" name="color" id="celeste">
+                        Celeste
+                    </label>
+
+                    <label for="azul" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-blue-500" type="checkbox" name="color" id="azul">
+                        Azul
+                    </label>
+
+                    <label for="azulMarino" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-blue-800" type="checkbox" name="color" id="azulMarino">
+                        Azul marino
+                    </label>
+
+                    <label for="morado" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-violet-600" type="checkbox" name="color" id="morado">
+                        Morado
+                    </label>
+
+                    <label for="gris" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-gray-500" type="checkbox" name="color" id="gris">
+                        Gris
+                    </label>
+
+                    <label for="blanco" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-white" type="checkbox" name="color" id="blanco">
+                        Blanco
+                    </label>
+
+                    <label for="negro" class="inline-flex items-center gap-1">
+                        <input class="size-4 accent-black" type="checkbox" name="color" id="negro">
+                        Negro
+                    </label>
                 </div>
+
+                <!--Botón aplicar-->
+                <input class="w-full h-10 mt-6 inline-flex justify-center items-center text-2xl text-indigo-50 bg-indigo-600 cursor-pointer hover:border-indigo-700 hover:bg-indigo-700" type="submit" value="Aplicar">
             </form>
         </aside>
 
         <!--Contenedor de productos-->
-        <main class="w-full lg:w-3/4 h-auto h-100 flex flex-wrap gap-4 justify-center sm:justify-between">
+        <section class="w-full lg:w-3/4 h-auto h-100 flex flex-wrap gap-4 justify-center sm:justify-between">
             <article class="bg-indigo-50 w-[90%] sm:w-[48%] md:w-[30%] shadow-md shadow-gray-400 py-4">
                 <img class="w-[90%] mx-auto" src="img/campera1.webp" alt="campera kevenly eleven">
                 <h3 class="w-[90%] mx-auto text-center font-bold py-2 bg-indigo-400">Campera Kevenly Eleven</h3>
@@ -306,8 +438,8 @@
                 <a class="w-[90%] mx-auto block text-center py-1 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-150 ease-linear"
                     href="">Ver producto</a>
             </article>
-        </main>
-    </div>
+        </section>
+    </main>
 
     <!--Iconos informativos-->
     <div class="flex flex-nowrap justify-around mt-10 max-w-[90%] mx-auto gap-4">
