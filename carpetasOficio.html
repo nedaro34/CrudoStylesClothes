@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="información sobre carpetas oficio">
+    <meta name="keyboards" content="tienda, online, argentina, oferta, precio, calidad, accesorios, carpetas, cuero, calidad, durabilidad, portabilidad">
+    <meta name="author" content="Nelson Daniel Romero">
     <title>Carpeta Oficio - Crudo Style Clothes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
@@ -22,7 +25,7 @@
         </nav>
     </header>
 
-    <!--Portada-->
+    <!--Banner-->
     <div class="w-full h-40 bg-[url(img/informacion-bg-div.webp)] bg-cover bg-center">
         <div class="size-full  bg-[#00000050] flex justify-center items-center">
             <h2 class="text-5xl font-bold text-center max-w-[90%] text-white ts-text">Información del producto</h2>
@@ -34,6 +37,7 @@
         <p class="text-xl font-semibold text-center lg:text-left">Contáctanos si tienes dudas o consultas</p>
         <a class="inline-flex justify-center items-center text-indigo-50 w-45 h-10 bg-indigo-600 hover:bg-indigo-700 transition-colors duration-150 ease-linear" href="contacto.html">Contactar</a>
     </div>
+
     <!--Iconos informativos-->
     <div class="flex flex-nowrap justify-around mt-15 max-w-[90%] mx-auto gap-4">
         <div class="flex flex-col sm:flex-row items-center text-center sm:text-left">
@@ -66,9 +70,8 @@
 
         <!--Contenedor de imagen-->
         <section class="w-[90%] md:w-1/2 h-auto h-100 flex flex-wrap gap-4 justify-center md:justify-between bg-indigo-50 shadow-md shadow-gray-400 p-4">
-            <!-- <img class="w-full" src="img/campera1.webp" alt="empleados en área laboral"> -->
             <div class="w-full">
-                <img class="h-full w-full object-cover object-top" src="img/carpeta-oficio-full.webp" alt="empleados en área laboral">
+                <img class="h-full w-full object-cover object-top" src="img/carpeta-oficio-full.webp" alt="carpetas oficio">
             </div>
         </section>
 
@@ -95,29 +98,32 @@
                 <li class="text-sm mt-2">Medidas: 39 x 29 x 4</li>
             </ul>
 
-            <form action="cuenta.html">
+            <form action="cuenta.html" method="get">
 
                 <!--Selector de color-->
                 <div class="flex flex-wrap justify-between items-baseline mt-4">
                     <p class="text-3xl font-semibold">Color</p>
                     <div class="flex flex-wrap gap-3">
                         <label for="blanco" class="inline-flex items-center gap-1">
-                            <input class="size-3" type="radio" name="color" id="blanco">
+                            <input class="size-3" type="radio" name="color" id="blanco" value="blanco" required>
                             Blanco
                         </label>
                         <label for="negro" class="inline-flex items-center gap-1">
-                            <input class="size-3" type="radio" name="color" id="negro">
+                            <input class="size-3" type="radio" name="color" id="negro" value="negro">
                             Negro
                         </label>
                     </div>
                 </div>
+
                 <!--Selector de cantidad de unidades-->
                 <div class="flex flex-wrap justify-between items-baseline mt-4">
                     <p class="text-3xl font-semibold">Cantidad</p>
-                    <input class="w-20 h-10 px-2 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100 text-right" type="number" name="cantidad" id="cantidad" placeholder="1">
+                    <input class="w-20 h-10 px-2 border-2 border-indigo-400 focus:outline-none focus:border-indigo-700 bg-indigo-100 text-right" type="number" name="cantidad" id="cantidad" min="1" value="1" required>
                 </div>
+
                 <!--Botón agregar al carrito-->
                 <input class="w-full h-10 mt-6 inline-flex justify-center items-center text-2xl text-indigo-50 bg-indigo-600 cursor-pointer hover:border-indigo-700 hover:bg-indigo-700" type="submit" value="Agregar al carrito">
+                <p class="text-sm text-center mt-2">*Cuenta necesaria para relizar la compra</p>
             </form>
         </aside>
     </main>
@@ -153,7 +159,7 @@
     <footer class="h-195 sm:h-90 md:h-60 mt-10 bg-indigo-700 text-indigo-50">
         <div class="md:hidden pt-10 text-left sm:text-center ml-10 sm:ml-0 mr-10 sm:mr-0">
             <h3 class="font-bold text-2xl">Recibí promos exclusivas dejándonos tu email</h3>
-            <form class="mt-2" action="suscripcionExtitosa.html">
+            <form class="mt-2" action="suscripcionExitosa.html" method="get">
                 <input class="border-2 p-1 border-indigo-500 bg-indigo-800 focus:bg-indigo-900 focus:border-indigo-400 focus:outline-none text-indigo-50" type="email" name="email" placeholder="direccion@ejemplo.com">
                 <input class="border-2 p-1 border-indigo-500 bg-indigo-800 hover:bg-indigo-900 hover:border-indigo-400 cursor-pointer" type="submit" value="Suscribirme">
             </form>
@@ -171,29 +177,29 @@
             <div class="ml-10 sm:ml-0 mt-10">
                 <h3 class="font-bold text-2xl">Legales</h3>
                 <ul class="mt-4">
-                    <li class="mt-2"><a href="faq.html">Preguntas frecuentes</a></li>
-                    <li class="mt-2"><a href="devoluciones.html">Envíos y devoluciones</a></li>
+                    <li class="mt-2"><a href="preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                    <li class="mt-2"><a href="preguntasFrecuentes.html#enviosDevoluciones">Envíos y devoluciones</a></li>
                     <li class="mt-2"><a href="politica.html">Políticas de la tienda</a></li>
-                    <li class="mt-2"><a href="politica.html#metodospago">Métodos de pago</a></li>
+                    <li class="mt-2"><a href="preguntasFrecuentes.html#metodosDePago">Métodos de pago</a></li>
                 </ul>
             </div>
             <div class="ml-10 sm:ml-0 mt-10">
                 <h3 class="font-bold text-2xl">Nuestras redes</h3>
                 <ul class="mt-4">
                         <li class="mt-2">
-                            <a href="https://www.facebook.com">
+                            <a href="https://www.facebook.com" target="_blank">
                                 <img class="w-5 inline-block" src="img/icons/icon-facebook.png" alt="ícono facebook">
                                 <span class="ml-2">Facebook</span>
                             </a>
                         </li>
                         <li class="mt-2">
-                            <a href="https://www.x.com">
+                            <a href="https://www.x.com" target="_blank">
                                 <img class="w-5 inline-block" src="img/icons/icon-x.png" alt="ícono x">
                                 <span class="ml-2">X</span>
                             </a>
                         </li>
                         <li class="mt-2">
-                            <a href="https://www.instagram.com">
+                            <a href="https://www.instagram.com" target="_blank">
                                 <img class="w-5 inline-block" src="img/icons/icon-instagram.png" alt="ícono instagram">
                                 <span class="ml-2">Instagram</span>
                             </a>
@@ -202,7 +208,7 @@
             </div>
             <div class="hidden md:block ml-10 sm:ml-0 mt-10">
                 <h3 class="font-bold text-2xl">Recibí promos exclusivas<br>dejándonos tu email</h3>
-                <form class="mt-2" action="suscripcionExtitosa.html">
+                <form class="mt-2" action="suscripcionExitosa.html" method="get">
                     <input class="border-2 p-1 border-indigo-500 bg-indigo-800 focus:bg-indigo-900 focus:border-indigo-400 focus:outline-none text-indigo-50" type="email" name="email" id="email" placeholder="direccion@ejemplo.com">
                     <input class="border-2 p-1 border-indigo-500 bg-indigo-800 hover:bg-indigo-900 hover:border-indigo-400 cursor-pointer" type="submit" value="Suscribirme">
                 </form>

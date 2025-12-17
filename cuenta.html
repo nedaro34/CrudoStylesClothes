@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="login y creación de cuenta">
+    <meta name="keyboards" content="ropa, prenda, tienda, online, argentina, oferta, precio, calidad, accesorios, mochilas, bolsos, carteras, remeras, camisas, campera, pantalones, jeans, cuenta, registro, control, envío, correo, email, historial">
+    <meta name="author" content="Nelson Daniel Romero">
     <title>Cuenta - Crudo Style Clothes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
@@ -22,7 +25,7 @@
         </nav>
     </header>
 
-    <!--Portada-->
+    <!--Banner-->
     <div class="w-full h-40 bg-[url(img/cuenta-bg-div.webp)] bg-cover bg-center">
         <div class="size-full  bg-[#00000050] flex justify-center items-center">
             <h1 class="text-5xl font-bold text-center max-w-[90%] text-white ts-text">Cuenta</h1>
@@ -32,7 +35,7 @@
     <!--Barra de preguntas frecuentes-->
     <div class="text-indigo-50 py-3 px-10 bg-indigo-400 flex flex-wrap lg:flex-nowrap justify-center items-center gap-4">
         <p class="text-xl font-semibold text-center lg:text-left">Revisa nuestra sección de preguntas frecuentes</p>
-        <a class="inline-flex justify-center items-center text-indigo-50 w-45 h-10 bg-indigo-600 hover:bg-indigo-700 transition-colors duration-150 ease-linear" href="faq.html">Ver sección</a>
+        <a class="inline-flex justify-center items-center text-indigo-50 w-45 h-10 bg-indigo-600 hover:bg-indigo-700 transition-colors duration-150 ease-linear" href="preguntasFrecuentes.html">Ver sección</a>
     </div>
 
     <!--Sección de formularios-->
@@ -41,15 +44,15 @@
         <!--Artículo crear cuenta-->
         <article class="bg-indigo-50 w-full lg:w-[48%] shadow-md shadow-gray-400 p-4">
             <h2 class="text-2xl text-center text-indigo-50 ms:pl-3 w-full font-bold py-2 bg-indigo-400">Crear cuenta</h2>
-            <form action="correoEnviado.html">
+            <form action="correoEnviado.html" method="post">
                 <label class="block w-full mt-4 font-semibold" for="nombre">Nombre</label>
                 <input class="block w-full h-10 p-2 bg-indigo-200 focus:bg-indigo-100 focus:outline-2 focus:outline-indigo-400" type="text" name="nombre" id="nombre" placeholder="Ej: Samuel Jordan" required>
                 <label class="block w-full mt-4 font-semibold" for="email">Email</label>
                 <input class="block w-full h-10 p-2 bg-indigo-200 focus:bg-indigo-100 focus:outline-2 focus:outline-indigo-400" type="email" name="email" placeholder="email@ejemplo.com" required>
                 <label class="block w-full mt-4 font-semibold" for="contrasena">Contraseña</label>
-                <input class="block w-full h-10 p-2 bg-indigo-200 focus:bg-indigo-100 focus:outline-2 focus:outline-indigo-400" type="password" name="contrasena" id="contrasena" placeholder="contraseñaEjemplo">
+                <input class="block w-full h-10 p-2 bg-indigo-200 focus:bg-indigo-100 focus:outline-2 focus:outline-indigo-400" type="password" name="contrasena" id="contrasena" placeholder="contraseñaEjemplo" required>
                 <label class="block w-full mt-4 font-semibold" for="contrasenaRepetida">Confirmar contraseña</label>
-                <input class="block w-full h-10 p-2 bg-indigo-200 focus:bg-indigo-100 focus:outline-2 focus:outline-indigo-400" type="password" name="contrasenaRepetida" id="contrasenaRepetida" placeholder="contraseñaEjemplo">
+                <input class="block w-full h-10 p-2 bg-indigo-200 focus:bg-indigo-100 focus:outline-2 focus:outline-indigo-400" type="password" name="contrasenaRepetida" id="contrasenaRepetida" placeholder="contraseñaEjemplo" required>
                 <input class="w-40 h-10 mt-4 mx-auto block justify-center items-center text-2xl text-indigo-50 bg-indigo-600 cursor-pointer hover:border-indigo-700 hover:bg-indigo-700" type="submit" value="Crear cuenta">
             </form>
         </article>
@@ -57,14 +60,14 @@
         <!--Artículo de ingreso-->
         <article class="bg-indigo-50 w-full lg:w-[48%] shadow-md shadow-gray-400 p-4">
             <h2 class="text-2xl text-center text-indigo-50 ms:pl-3 w-full font-bold py-2 bg-indigo-400">Ingresar</h2>
-            <form action="error.html">
+            <form action="error.html" method="post">
                 <label class="block w-full mt-4 font-semibold" for="email">Email</label>
                 <input class="block w-full h-10 p-2 bg-indigo-200 focus:bg-indigo-100 focus:outline-2 focus:outline-indigo-400" type="email" name="email" placeholder="email@ejemplo.com" required>
                 <label class="block w-full mt-4 font-semibold" for="telefono">Contraseña</label>
-                <input class="block w-full h-10 p-2 bg-indigo-200 focus:bg-indigo-100 focus:outline-2 focus:outline-indigo-400" type="password" name="telefono" id="telefono" placeholder="contraseñaEjemplo">
+                <input class="block w-full h-10 p-2 bg-indigo-200 focus:bg-indigo-100 focus:outline-2 focus:outline-indigo-400" type="password" name="telefono" id="telefono" placeholder="contraseñaEjemplo" required>
                 <div class="mt-2 flex flex-wrap justify-between text-sm">
                     <label class="flex gap-1 items-center justify-center" for="recordar">
-                        <input type="checkbox" name="recordar" id="recordar">
+                        <input type="checkbox" name="recordar" id="recordar" value="true">
                         Recordar contraseña
                     </label>
                     <a class="hover:text-indigo-500" href="#">¿Olvidaste tu contraseña?</a>
@@ -107,7 +110,7 @@
     <footer class="h-195 sm:h-90 md:h-60 bg-indigo-700 text-indigo-50 mt-10">
         <div class="md:hidden pt-10 text-left sm:text-center ml-10 sm:ml-0 mr-10 sm:mr-0">
             <h3 class="font-bold text-2xl">Recibí promos exclusivas dejándonos tu email</h3>
-            <form class="mt-2" action="suscripcionExtitosa.html">
+            <form class="mt-2" action="suscripcionExitosa.html" method="get">
                 <input class="border-2 p-1 border-indigo-500 bg-indigo-800 focus:bg-indigo-900 focus:border-indigo-400 focus:outline-none text-indigo-50" type="email" name="email" placeholder="direccion@ejemplo.com">
                 <input class="border-2 p-1 border-indigo-500 bg-indigo-800 hover:bg-indigo-900 hover:border-indigo-400 cursor-pointer" type="submit" value="Suscribirme">
             </form>
@@ -125,29 +128,29 @@
             <div class="ml-10 sm:ml-0 mt-10">
                 <h3 class="font-bold text-2xl">Legales</h3>
                 <ul class="mt-4">
-                    <li class="mt-2"><a href="faq.html">Preguntas frecuentes</a></li>
-                    <li class="mt-2"><a href="devoluciones.html">Envíos y devoluciones</a></li>
+                    <li class="mt-2"><a href="preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                    <li class="mt-2"><a href="preguntasFrecuentes.html#enviosDevoluciones">Envíos y devoluciones</a></li>
                     <li class="mt-2"><a href="politica.html">Políticas de la tienda</a></li>
-                    <li class="mt-2"><a href="politica.html#metodospago">Métodos de pago</a></li>
+                    <li class="mt-2"><a href="preguntasFrecuentes.html#metodosDePago">Métodos de pago</a></li>
                 </ul>
             </div>
             <div class="ml-10 sm:ml-0 mt-10">
                 <h3 class="font-bold text-2xl">Nuestras redes</h3>
                 <ul class="mt-4">
                         <li class="mt-2">
-                            <a href="https://www.facebook.com">
+                            <a href="https://www.facebook.com" target="_blank">
                                 <img class="w-5 inline-block" src="img/icons/icon-facebook.png" alt="ícono facebook">
                                 <span class="ml-2">Facebook</span>
                             </a>
                         </li>
                         <li class="mt-2">
-                            <a href="https://www.x.com">
+                            <a href="https://www.x.com" target="_blank">
                                 <img class="w-5 inline-block" src="img/icons/icon-x.png" alt="ícono x">
                                 <span class="ml-2">X</span>
                             </a>
                         </li>
                         <li class="mt-2">
-                            <a href="https://www.instagram.com">
+                            <a href="https://www.instagram.com" target="_blank">
                                 <img class="w-5 inline-block" src="img/icons/icon-instagram.png" alt="ícono instagram">
                                 <span class="ml-2">Instagram</span>
                             </a>
@@ -156,7 +159,7 @@
             </div>
             <div class="hidden md:block ml-10 sm:ml-0 mt-10">
                 <h3 class="font-bold text-2xl">Recibí promos exclusivas<br>dejándonos tu email</h3>
-                <form class="mt-2" action="suscripcionExtitosa.html">
+                <form class="mt-2" action="suscripcionExitosa.html" method="get">
                     <input class="border-2 p-1 border-indigo-500 bg-indigo-800 focus:bg-indigo-900 focus:border-indigo-400 focus:outline-none text-indigo-50" type="email" name="email" id="email" placeholder="direccion@ejemplo.com">
                     <input class="border-2 p-1 border-indigo-500 bg-indigo-800 hover:bg-indigo-900 hover:border-indigo-400 cursor-pointer" type="submit" value="Suscribirme">
                 </form>
